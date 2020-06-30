@@ -19,6 +19,20 @@ module.exports = {
             ],
 
            },
+           {
+               test: /\.html$/,
+               use: ['html-loader']
+           },
+           {
+            test: /\.(svg|png|jpg|jpeg|gif|webp)$/,
+            use: {
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[hash].[ext]',
+                    outputPath: 'imgs',
+                }
+            }
+        },
        ],
    },
 }
