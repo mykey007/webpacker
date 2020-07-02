@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = merge(config, {
    output: {
-       filename: 'main.[contentHash].js',
+       filename: '[name].[contentHash].bundle.js',
        path: path.resolve(__dirname, "dist")
    },
    mode: 'production',

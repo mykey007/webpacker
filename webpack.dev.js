@@ -4,7 +4,7 @@ const merge = require('webpack-merge')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = merge(config, {
    output: {
-       filename: 'main.js',
+       filename: '[name].bundle.js',
        path: path.resolve(__dirname, "dist")
    },
    mode: 'development',
